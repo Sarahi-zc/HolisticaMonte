@@ -1,0 +1,174 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: none;
+}
+
+  
+  body {
+    /*background: color #8abfb2; /* Color de fondo claro (puedes cambiarlo) */
+    background-image: url('img/Chakras.webp')
+    
+}
+header {
+    background-color: #00dcd2; 
+    color: #00504c;
+    text-align: center;
+    padding: 25px;
+    border-radius: 150px;
+    unicode-bidi: isolate
+}
+  
+  #logo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #aa817e;
+    padding: 0;
+    opacity: 0.75;
+    border-radius: 200px;
+}
+  
+  nav ul li {
+    margin: 0 15px; /* Espaciado entre elementos de navegación */
+    color:#f9c8c2;
+    text-decoration: solid;
+  }
+  h2 {
+    justify-content: center;
+    text-align: center;
+    color: #251B28; /* Color de los títulos */
+  }
+  /* Menú horizontal con transiciones */
+  .menu {
+    display: block;
+    position: relative;
+    height: 76px;
+    width: 120px;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .menu.servicios {
+    border-top: #aa817e 0.3em solid;
+  }
+  .menu.proyectos {
+    border-top: #aa817e 0.3em solid;
+  }
+  
+  .menu.contacto {
+    border-top: #aa817e 0.3em solid;
+  }
+  
+  .menu > span {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+  }
+  
+  .menu:after, .menu > span > span {
+    display: block;
+    text-align: center;
+    border-radius: 0em;
+    padding: 2em 0 1.5em;
+  }
+  
+  .menu:after {
+    content: attr(data-title);
+    width: 100%;
+    background:#aa817e;
+    color: #fff; 
+  }
+  
+  .menu > span > span {
+    width: 120px;
+    color: #fff;
+  }
+  
+  .menu.servicios > span > span {
+    background-image: url('img/inicio.png');
+  }
+  
+  .menu.proyectos > span > span {
+    background-image: url('img/vela.png');
+  }
+  
+  .menu.contacto > span > span {
+     background-image: url('img/contacto.png');
+  }
+  
+  .menu:hover > span {
+     height: 100%; 
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    display: inline;
+    float: left;
+    text-decoration: none;
+    font-family: sans;
+  }
+  
+  main {
+    margin: 50px auto;
+    max-width: 1000px; /* Ancho máximo del contenido principal */
+    background-color: #de93e5; /* Color de fondo del contenido */
+   /*background-image: url('img/Chakras.webp');*/
+    opacity: 0.9;
+    padding: 20px; /* Espaciado interno */
+    border-radius: 100px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px #251B28;; /* Sombra para el contenedor */
+    justify-content: left;
+    text-align: center;
+}
+
+  .redes_sociales {
+    text-align: center; 
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  .redes_sociales ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block; /* Permite centrar los elementos dentro del contenedor */
+  }
+  
+  .redes_sociales li {
+    display: inline-block; 
+    margin: 0 10px; /* Ajusta el margen horizontal para espaciar los iconos */
+  }
+  
+  .redes_sociales img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+  }
+  
+  footer {
+    text-align: center; /* Alineación del pie de página */
+    padding: 10px 0;
+    background-color: #00dcd2; 
+    color: #00504c; /* Color del texto en el pie de página */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 150px;
+}
